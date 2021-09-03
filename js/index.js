@@ -16,9 +16,11 @@ function doSquare() {
     document.getElementById("sldr");
     var size = sizeinput.value;
     var context = dd1.getContext("2d");
+    context.clearRect(0, 0, dd1.width, dd1.height);
+
     context.fillStyle = "yellow";
     context.fillRect(20, 20, size, size);
-    
+
  
     // var sliderInput = document.getElementById("sldr");
     // var len = sliderInput.value;
